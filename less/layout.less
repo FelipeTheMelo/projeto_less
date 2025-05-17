@@ -1,0 +1,76 @@
+body {
+    font-family: @font-family;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: @container-width;
+    margin: 0 auto;
+    padding: @padding-base;
+}
+
+header {
+    background-color: extract(@colors, secondary);
+    padding: 10px 0;
+
+.branding img {
+    max-height: 70px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+&:hover {
+        text-decoration: underline;
+    }
+    }
+}
+}
+
+section {
+padding: 40px 0;
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+
+img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-button {
+.button-variant(primary); // Usando o mixin com mapa
+    }
+    }
+}
+}
